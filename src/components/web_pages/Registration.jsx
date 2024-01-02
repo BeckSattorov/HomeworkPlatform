@@ -72,7 +72,7 @@ export const Registration = () => {
           <BiSolidLeftArrow />
           Bosh sahifa
         </Link>
-        <div className='w-full h-screen bg-[#f9fafb] p-[64px_120px] flex items-center justify-center sm:p-[64px_20px]'>
+        <div className='w-full h-screen bg-[#f9fafb] p-[64px_120px] flex items-center justify-center sm:p-[120px_20px]'>
           <div className='flex items-center gap-[36px]'>
             <div className='w-[680px] h-[auto] p-[32px] bg-[#fff] rounded-[16px] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] sm:w-full sm:p-[20px]'>
               <Link to="/" className='sm:flex justify-center'>
