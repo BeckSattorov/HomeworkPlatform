@@ -6,7 +6,7 @@ import './homeStyle.css';
 export const Home = () => {
     return (
         <div>
-            <header class="absolute top-0 left-0 w-full h-[100px] flex items-center z-10 md:h-[90px]">
+            <header class="absolute top-0 left-0 w-full h-[100px] flex items-center z-10 md:h-[90px] sm:relative">
                 <div class="container">
                     <div className='flex items-center justify-between'>
                         <div className='flex items-center'>
