@@ -1,0 +1,184 @@
+/* ! Navbar animatsiya */
+.list_item_hover,
+.list_item_active {
+  position: relative;
+}
+
+.liner_div {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.88) -17.8%, rgba(255, 255, 255, 0.00) 88.26%);
+}
+
+.list_item_hover:hover>.liner_div,
+.list_item_active>.liner_div {
+  animation: list_item_hover_anim 0.4s ease-in-out forwards;
+}
+
+.list_item_hover:not(:hover)>.liner_div {
+  animation: list_item_nothover_anim 0.3s linear forwards;
+}
+
+
+@keyframes list_item_hover_anim {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes list_item_nothover_anim {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+/* ! End of Navbar animatsiya */
+
+.fa-bars {
+  color: #0052B4;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 540px) {
+  .fa-bars {
+    font-size: 14px;
+  }
+}
+
+/* ! User modal window */
+.user__modal > div {
+  /* display: none; */
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.4s linear;
+}
+
+.user__modal:hover > div {
+  height: 130px;
+  padding: 12px;
+}
+/* ! End of User modal window */
+
+
+/*! Dashbord title */
+.dashbord__title__bg {
+  background: url('./assets/images/dashbord__teacher__img.svg'), linear-gradient(#0052B4, #0052B4, #0052B4);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashbord__title__bg {
+    background-image: none;
+    background-color: #0052B4;
+  }
+}
+
+/*! end of */
+
+/* ! Homework card after  */
+.homework__card {
+  position: relative;
+}
+
+.homework__card::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.604);
+}
+/*! end of */
+
+/*! clipping path */
+.clipping {
+  clip-path: circle(0% at bottom left);
+  background-color: #0052B4;
+  animation: clipping 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes clipping {
+  0% {
+    clip-path: circle(0% at bottom left);
+    background-color: #0052B4;
+  }100% {
+    clip-path: circle(1000%);
+    background-color: white;
+  }
+}
+
+.noClipping {
+  clip-path: circle(100%);
+  background-color: white;
+  animation: noclipping 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes noclipping {
+  0% {
+    clip-path: circle(100%);
+    background-color: white;
+  }100% {
+    clip-path: circle(0% at bottom left);
+    background-color: #8eb5e5;
+  }
+}
+
+@keyframes hiding {
+  0% {
+    display: flex;
+  }100% {
+    display: none;
+  }
+}
+/*! End of clipping path */
+
+.user-grid-item {
+  display: grid;
+  grid-template-columns: auto 2fr auto;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+}
+
+.swiper-slide {
+  width: 270px !important;
+  margin-right: 20px !important;
+}
+
+.swiper-wrapper {
+  margin-right: 130px;
+}
+
+.speedometer-svg {
+  width: 200px;
+  height: 200px;
+}
+
+.dial {
+  fill: #eee;
+}
+
+.progress-point {
+  fill: #ff0000;
+  transform-origin: center;
+  transition: transform 0.5s;
+  transform: scale(var(--progress-radius, 0));
+}
+
+.speed-input {
+  margin-top: 10px;
+}
