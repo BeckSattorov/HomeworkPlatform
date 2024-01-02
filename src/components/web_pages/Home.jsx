@@ -27,7 +27,7 @@ export const Home = () => {
                 </div>
             </header>
 
-                <section class="relative w-full h-screen flex items-center justify-center lg-screen sm:py-[120px]">
+                <section class="relative w-full h-screen flex items-center justify-center lg-screen sm:py-[60px]">
                     <div class="container">
                         <div className='w-full flex items-center lg:flex-col gap-[96px]'>
                             <div className="w-full flex-1 lg:flex-auto">
