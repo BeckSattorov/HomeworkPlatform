@@ -48,11 +48,11 @@ export const Login = () => {
                     <BiSolidLeftArrow />
                     Bosh sahifa
                 </Link>
-                <div className='w-full h-screen flex items-center justify-start relative'>
+                <div className='w-full h-screen flex items-center justify-start relative sm:p-[0_20px]'>
                     <div className='flex items-start flex-col flex-[1] w-full lg:flex-none'>
                         <div className='w-full max-w-[600px] m-[0_auto] pr-[60px] pl-[150px] lg:p-0 lg:text-center'>
                             <h1 className='mb-4 text-3xl font-extrabold text-gray-900 dark:text-white lg:text-[28px]'><span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>Shaxsiy akkauntga</span> kirish.</h1>
-                            <form className="w-full h-auto lg:p-[0_80px]" onSubmit={SignIn}>
+                            <form className="w-full h-auto lg:p-[0_20px]" onSubmit={SignIn}>
                                 <div className="mb-5">
                                     <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sizning elektron manzilingiz:</label>
                                     <input type="email" id="email" onChange={(e) => setEmail(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@example.com" required />
