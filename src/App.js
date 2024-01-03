@@ -22,7 +22,7 @@ function App() {
       <Route path='user' element={<User />}>
         <Route path='homework' element={<UserHomework />} />
         <Route path='liderboard' element={<LiderBoard />} />
-        <Route path='dashboard' element={<UserDashboard />} />
+        <Route path='/' element={<UserDashboard />} />
         <Route path='message' element={<Message />} />
       </Route>
       <Route path='admin/@JJKHKJ&&68762hjk&98^78675875/87832778723748974787' element={<Admin />}>
