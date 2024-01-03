@@ -32,8 +32,8 @@ export const User = () => {
         <div className='relative w-full h-screen bg-[#fff]'>
           <div className='user-grid-item'>
             <UserNavbar />
-            {/* <UserDashboard /> */}
-            <UserInfo />
+            <UserDashboard />
+{/*             <UserInfo /> */}
           </div>
         </div >
       </>
